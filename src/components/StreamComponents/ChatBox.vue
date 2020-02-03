@@ -127,13 +127,13 @@ export default {
     }
   },
   mounted() {
-    this.username = prompt("What is your username?", "[Anonymous]");
+    // this.username = prompt("What is your username?", "[Anonymous]");
 
-    if (!this.username) {
-      this.username = "[Anonymous]";
-    }
+    // if (!this.username) {
+    //   this.username = "[Anonymous]";
+    // }
 
-    this.joinServer();
+    // this.joinServer();
   }
 };
 </script>
