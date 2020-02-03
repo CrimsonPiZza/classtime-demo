@@ -12,8 +12,8 @@
       </v-card-title>
       <v-card-text>
         <v-form ref="form">
-          <v-text-field id="streamTitleInput" label="Title" color="black" required></v-text-field>
-          <v-text-field id="descriptionInput" label="Description" color="black" required></v-text-field>
+          <v-text-field id="streamTitleInput" label="Title" color="black" v-model="streamTitle" required></v-text-field>
+          <v-text-field id="descriptionInput" label="Description" color="black" v-model="description" required></v-text-field>
           <v-switch
             id="isPrivateToggle"
             class="pa-0 mt-5"
@@ -154,7 +154,6 @@ export default {
   },
   methods: {
     async startStream() {
-      console.log("HI");
       const stream = await backend.startStream(
         this.streamTitle,
         this.description,

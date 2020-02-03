@@ -1,6 +1,6 @@
 import axios from "axios";
 import cookie from "./cookie";
-const url = "http://localhost:3000/";
+const url = "http://localhost:3001/";
 
 class Service {
   //Get Posts
